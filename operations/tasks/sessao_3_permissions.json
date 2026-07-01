@@ -1,0 +1,38 @@
+{
+  "session": "sessao-3-permissions",
+  "guild_id": 1521821316087287808,
+  "tasks": [
+    {
+      "action": "delete_channel",
+      "params": {
+        "channel_id": 1521858815539019836
+      }
+    },
+    {
+      "action": "edit_channel",
+      "params": {
+        "channel_id": 1521858816403312771,
+        "categoria": "ADMINISTRAÇÃO"
+      }
+    },
+    {
+      "action": "set_channel_permissions",
+      "params": {
+        "channel_id": 1521858816403312771,
+        "target_id": 1521821316087287808,
+        "target_type": "role",
+        "deny": ["view_channel"]
+      }
+    },
+    {
+      "action": "set_channel_permissions",
+      "params": {
+        "channel_id": 1521858816403312771,
+        "target_id": 1521858814511677581,
+        "target_type": "role",
+        "allow": ["view_channel"]
+      }
+    },
+    { "action": "get_channel_overwrites", "params": { "channel_id": 1521858816403312771 } }
+  ]
+}

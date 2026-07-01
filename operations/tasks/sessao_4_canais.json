@@ -1,0 +1,81 @@
+{
+  "session": "sessao-4-canais",
+  "guild_id": 1521821316087287808,
+  "tasks": [
+    {
+      "action": "create_channel",
+      "params": { "nome": "INFORMAÇÕES", "tipo": "text", "topico": "Categoria de Informações" }
+    },
+    {
+      "action": "create_channel",
+      "params": { "nome": "boas-vindas", "tipo": "text", "categoria": "INFORMAÇÕES" }
+    },
+    {
+      "action": "create_channel",
+      "params": { "nome": "regras", "tipo": "text", "categoria": "INFORMAÇÕES" }
+    },
+    {
+      "action": "create_channel",
+      "params": { "nome": "anuncios", "tipo": "announcement", "categoria": "INFORMAÇÕES" }
+    },
+    {
+      "action": "create_channel",
+      "params": { "nome": "links-uteis", "tipo": "text", "categoria": "INFORMAÇÕES" }
+    },
+
+    {
+      "action": "create_channel",
+      "params": { "nome": "COMUNIDADE", "tipo": "text", "topico": "Categoria da Comunidade" }
+    },
+    {
+      "action": "create_channel",
+      "params": { "nome": "chat-geral", "tipo": "text", "categoria": "COMUNIDADE" }
+    },
+    {
+      "action": "create_channel",
+      "params": { "nome": "comandos-bot", "tipo": "text", "categoria": "COMUNIDADE" }
+    },
+    {
+      "action": "create_channel",
+      "params": { "nome": "off-topic", "tipo": "text", "categoria": "COMUNIDADE" }
+    },
+
+    {
+      "action": "create_channel",
+      "params": { "nome": "JOGO", "tipo": "text", "topico": "Categoria do Jogo" }
+    },
+    {
+      "action": "create_channel",
+      "params": { "nome": "procurando-grupo", "tipo": "text", "categoria": "JOGO" }
+    },
+    {
+      "action": "create_channel",
+      "params": { "nome": "duvidas", "tipo": "text", "categoria": "JOGO" }
+    },
+    {
+      "action": "create_channel",
+      "params": { "nome": "trade", "tipo": "text", "categoria": "JOGO" }
+    },
+
+    {
+      "action": "create_channel",
+      "params": { "nome": "CANAIS DE VOZ", "tipo": "text", "topico": "Categoria de Voz" }
+    },
+    {
+      "action": "create_channel",
+      "params": { "nome": "Geral 1", "tipo": "voice", "categoria": "CANAIS DE VOZ" }
+    },
+    {
+      "action": "create_channel",
+      "params": { "nome": "Geral 2", "tipo": "voice", "categoria": "CANAIS DE VOZ" }
+    },
+    {
+      "action": "create_channel",
+      "params": { "nome": "Grupo 1", "tipo": "voice", "categoria": "CANAIS DE VOZ" }
+    },
+    {
+      "action": "create_channel",
+      "params": { "nome": "Grupo 2", "tipo": "voice", "categoria": "CANAIS DE VOZ" }
+    }
+  ]
+}

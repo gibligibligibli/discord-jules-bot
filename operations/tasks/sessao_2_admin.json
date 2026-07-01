@@ -1,0 +1,33 @@
+{
+  "session": "sessao-2-admin",
+  "guild_id": 1521821316087287808,
+  "tasks": [
+    {
+      "action": "create_role",
+      "params": {
+        "nome": "Administrador",
+        "cor": "vermelho",
+        "exibicao_separada": true
+      }
+    },
+    {
+      "action": "create_channel",
+      "params": {
+        "nome": "ADMINISTRAÇÃO",
+        "tipo": "text",
+        "topico": "Categoria de Administração"
+      }
+    },
+    {
+      "action": "create_channel",
+      "params": {
+        "nome": "logs-jules",
+        "tipo": "text",
+        "categoria": "ADMINISTRAÇÃO",
+        "topico": "Logs em tempo real de Jules"
+      }
+    },
+    { "action": "role_hierarchy", "params": {} },
+    { "action": "channels_by_category", "params": {} }
+  ]
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "timestamp": "2026-07-01T12:47:13.996926Z",
+    "status": "INFO",
+    "details": "Sessão iniciada no servidor: Sticker Beasts"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:14.292961Z",
+    "status": "OK",
+    "details": "Canal #informações (text) criado (ID: 1521859729251373179)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:14.511470Z",
+    "status": "OK",
+    "details": "Canal #boas-vindas (text) criado (ID: 1521859730589483129)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:14.688349Z",
+    "status": "OK",
+    "details": "Canal #regras (text) criado (ID: 1521859731482742904)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:14.850291Z",
+    "status": "OK",
+    "details": "Canal #anuncios (announcement) criado (ID: 1521859732187648102)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:15.023741Z",
+    "status": "OK",
+    "details": "Canal #links-uteis (text) criado (ID: 1521859732930039868)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:15.232679Z",
+    "status": "OK",
+    "details": "Canal #comunidade (text) criado (ID: 1521859733575958529)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:15.534432Z",
+    "status": "OK",
+    "details": "Canal #chat-geral (text) criado (ID: 1521859734704099450)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:15.725187Z",
+    "status": "OK",
+    "details": "Canal #comandos-bot (text) criado (ID: 1521859735802876035)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:15.907802Z",
+    "status": "OK",
+    "details": "Canal #off-topic (text) criado (ID: 1521859736197271646)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:16.142359Z",
+    "status": "OK",
+    "details": "Canal #jogo (text) criado (ID: 1521859737530929192)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:16.323642Z",
+    "status": "OK",
+    "details": "Canal #procurando-grupo (text) criado (ID: 1521859738340560997)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:16.512452Z",
+    "status": "OK",
+    "details": "Canal #duvidas (text) criado (ID: 1521859739171160196)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:16.701223Z",
+    "status": "OK",
+    "details": "Canal #trade (text) criado (ID: 1521859739884064768)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:16.930828Z",
+    "status": "OK",
+    "details": "Canal #canais-de-voz (text) criado (ID: 1521859740819525632)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:17.099794Z",
+    "status": "OK",
+    "details": "Canal #Geral 1 (voice) criado (ID: 1521859741633089686)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:17.316626Z",
+    "status": "OK",
+    "details": "Canal #Geral 2 (voice) criado (ID: 1521859742304043130)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:17.479823Z",
+    "status": "OK",
+    "details": "Canal #Grupo 1 (voice) criado (ID: 1521859743210147891)"
+  },
+  {
+    "timestamp": "2026-07-01T12:47:17.911384Z",
+    "status": "OK",
+    "details": "Canal #Grupo 2 (voice) criado (ID: 1521859744040751245)"
+  }
+]

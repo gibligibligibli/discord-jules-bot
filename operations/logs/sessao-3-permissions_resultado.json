@@ -1,0 +1,37 @@
+[
+  {
+    "timestamp": "2026-07-01T12:46:00.345616Z",
+    "status": "INFO",
+    "details": "Sessão iniciada no servidor: Sticker Beasts"
+  },
+  {
+    "timestamp": "2026-07-01T12:46:00.437498Z",
+    "status": "FALHA",
+    "details": "delete_channel: 404 Not Found (error code: 10003): Unknown Channel"
+  },
+  {
+    "timestamp": "2026-07-01T12:46:00.627831Z",
+    "status": "OK",
+    "details": "Canal #logs-jules editado (category)"
+  },
+  {
+    "timestamp": "2026-07-01T12:46:00.787790Z",
+    "status": "OK",
+    "details": "Permissões de #logs-jules para @everyone atualizadas"
+  },
+  {
+    "timestamp": "2026-07-01T12:46:00.932710Z",
+    "status": "OK",
+    "details": "Permissões de #logs-jules para Administrador atualizadas"
+  },
+  {
+    "timestamp": "2026-07-01T12:46:00.932930Z",
+    "status": "OK",
+    "details": "1 permissões especiais em #logs-jules"
+  },
+  {
+    "timestamp": "2026-07-01T12:46:00.932973Z",
+    "status": "OK",
+    "details": "Resultado: [{\"target_id\": 1521821316087287808, \"target_name\": \"@everyone\", \"target_type\": \"role\", \"allow\": [], \"deny\": [\"read_messages\"]}]"
+  }
+]

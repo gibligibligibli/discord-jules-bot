@@ -1,0 +1,7 @@
+{
+  "session": "sessao-7-send_logs",
+  "guild_id": 1521821316087287808,
+  "tasks": [
+    { "action": "send_log", "params": { "channel_id": 1521858816403312771, "message": "Olá! Sou Jules. Terminei a criação e organização das categorias e canais do MMORPG (INFORMAÇÕES, COMUNIDADE, JOGO e VOZ), além de ajustar as permissões. Todo o progresso foi registrado localmente e este é o meu sinal de vida no canal de logs exclusivo para administradores!" } }
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "timestamp": "2026-07-01T12:41:57.031483Z",
+    "status": "INFO",
+    "details": "Sessão iniciada no servidor: Sticker Beasts"
+  },
+  {
+    "timestamp": "2026-07-01T12:41:57.031713Z",
+    "status": "OK",
+    "details": "Informações do servidor 'Sticker Beasts' obtidas (2 membros)"
+  },
+  {
+    "timestamp": "2026-07-01T12:41:57.031768Z",
+    "status": "OK",
+    "details": "Resultado: {\"id\": 1521821316087287808, \"name\": \"Sticker Beasts\", \"description\": null, \"owner\": \"None\", \"owner_id\": 599592325068488714, \"member_count\": 2, \"online_count\": 0, \"channel_count\": 4, \"text_channels\": 1, \"voice_channels\": 1, \"categories\": 2, \"role_count\": 2, \"emoji_count\": 0, \"boost_tier\": 0, \"boost_count\": 0, \"verification_level\": \"none\", \"explicit_content_filter\": \"disabled\", \"mfa_level\": \"required\", \"nsfw_level\": \"default\", \"afk_channel\": null, \"afk_timeout\": 300, \"system_channel\": \"geral\", \"ru"
+  },
+  {
+    "timestamp": "2026-07-01T12:41:57.031829Z",
+    "status": "OK",
+    "details": "Estrutura do servidor obtida (2 categorias)"
+  },
+  {
+    "timestamp": "2026-07-01T12:41:57.031860Z",
+    "status": "OK",
+    "details": "Resultado: {\"Canais de Texto\": {\"category_id\": 1521821316926144572, \"position\": 0, \"channels\": [{\"id\": 1521821316926144574, \"name\": \"geral\", \"type\": \"text\", \"position\": 0}]}, \"Canais de Voz\": {\"category_id\": 1521821316926144573, \"position\": 0, \"channels\": [{\"id\": 1521821316926144575, \"name\": \"Geral\", \"type\": \"voice\", \"position\": 0}]}}"
+  },
+  {
+    "timestamp": "2026-07-01T12:41:57.031925Z",
+    "status": "OK",
+    "details": "Hierarquia de cargos obtida (1 cargos)"
+  },
+  {
+    "timestamp": "2026-07-01T12:41:57.032049Z",
+    "status": "OK",
+    "details": "Resultado: [{\"id\": 1521845120905904220, \"name\": \"Sticker Beasts Online\", \"position\": 1, \"color\": \"#000000\", \"member_count\": 1}]"
+  }
+]
