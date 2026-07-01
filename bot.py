@@ -8,6 +8,8 @@ import sys
 import json
 import os
 import asyncio
+import discord
+from discord.ext import commands
 from core import SessionBot, channels, roles, members, inspect, permissions
 
 
@@ -87,9 +89,38 @@ async def executar_sessao(token, guild_id, tarefas, caminho_resultado):
     await session.run(token)
 
 
+async def listar_servidores(token):
+    """Conecta, lista servidores e desliga."""
+    intents = discord.Intents.default()
+    client = commands.Bot(command_prefix="!", intents=intents)
+
+    @client.event
+    async def on_ready():
+        print(f"Bot: {client.user}\n")
+        if not client.guilds:
+            print("O bot não está em nenhum servidor.")
+        else:
+            for g in client.guilds:
+                print(f"  [{g.id}] {g.name} — {g.member_count} membros")
+        print(f"\nTotal: {len(client.guilds)} servidor(es)")
+        await client.close()
+
+    await client.start(token)
+
+
 def main():
+    token = os.getenv("DISCORD_TOKEN")
+    if not token:
+        print("Token não encontrado. Defina DISCORD_TOKEN como variável de ambiente.")
+        sys.exit(1)
+
+    if len(sys.argv) >= 2 and sys.argv[1] in ("--list", "--list-guilds", "--discover"):
+        asyncio.run(listar_servidores(token))
+        return
+
     if len(sys.argv) < 2:
         print("Uso: python bot.py <arquivo_de_tarefas.json>")
+        print("      python bot.py --list            (lista servidores)")
         sys.exit(1)
 
     caminho_tarefas = sys.argv[1]
@@ -98,14 +129,10 @@ def main():
         sys.exit(1)
 
     dados = carregar_tarefas(caminho_tarefas)
-    token = os.getenv("DISCORD_TOKEN")
-    if not token:
-        print("Token não encontrado. Defina DISCORD_TOKEN como variável de ambiente.")
-        sys.exit(1)
-
     guild_id = dados.get("guild_id")
+
     if not guild_id:
-        print("Campo 'guild_id' obrigatório no JSON.")
+        print("'guild_id' não informado no JSON. Use --list para descobrir o ID.")
         sys.exit(1)
 
     nome_sessao = dados.get("session", "sessao")

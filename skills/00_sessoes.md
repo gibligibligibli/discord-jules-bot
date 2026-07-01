@@ -10,6 +10,15 @@ Jules executa tarefas administrativas no Discord por **sessões**: conecta, exec
 4. Salva o resultado em `operations/execution/`
 5. Desliga automaticamente
 
+## Descobrir o servidor
+Antes de criar tarefas, use `--list` para ver em quais servidores o bot está:
+
+```
+python bot.py --list
+```
+
+Isso conecta, lista cada servidor com seu **ID numérico** e desliga. Use o ID no campo `guild_id` do JSON.
+
 ## Formato do arquivo de tarefas
 
 ```json
