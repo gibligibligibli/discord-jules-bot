@@ -69,7 +69,7 @@ async def role_info(session, role_id):
         session.log("ERRO", f"Cargo ID {role_id} não encontrado")
         return None
 
-    perms_ativas = [p for p, v in dict(r.permissions) if v]
+    perms_ativas = [p for p, v in r.permissions if v]
     info = {
         "id": r.id,
         "name": r.name,
@@ -285,7 +285,7 @@ async def role_summary(session):
             "color": str(r.color),
             "position": r.position,
             "member_count": len(r.members),
-            "permission_flags": [p for p, v in dict(r.permissions) if v],
+            "permission_flags": [p for p, v in r.permissions if v],
         })
     session.log("OK", f"Resumo de {len(resumo)} cargos gerado")
     return resumo
