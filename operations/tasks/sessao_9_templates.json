@@ -1,0 +1,16 @@
+{
+  "session": "sessao-9-templates",
+  "guild_id": 1521821316087287808,
+  "tasks": [
+    { "action": "send_message", "params": { "channel_id": 1521859730589483129, "content": "## 👋 Boas-vindas!\nSeja muito bem-vindo(a) ao servidor! \n> *Template para editar com as regras gerais ou link do site.*" } },
+    { "action": "send_message", "params": { "channel_id": 1521859731482742904, "content": "## 📜 Regras do Servidor\n1. Respeite todos os membros.\n2. Sem spam ou flood.\n> *Template para editar com todas as regras do MMORPG e do Discord.*" } },
+    { "action": "send_message", "params": { "channel_id": 1521865548215091240, "content": "## 📢 Anúncios\nFique de olho neste canal para atualizações do jogo, manutenções e novidades!\n> *Template para editar com anúncios futuros.*" } },
+    { "action": "send_message", "params": { "channel_id": 1521859732930039868, "content": "## 🔗 Links Úteis\n- **Site:** [inserir link]\n- **Download:** [inserir link]\n- **Wiki:** [inserir link]\n> *Template para editar com os links reais do projeto.*" } },
+    { "action": "send_message", "params": { "channel_id": 1521859734704099450, "content": "## 💬 Chat Geral\nUse este canal para conversar sobre o jogo e interagir com outros jogadores!\n> *Sinta-se livre para começar a conversar.*" } },
+    { "action": "send_message", "params": { "channel_id": 1521859735802876035, "content": "## 🤖 Comandos de Bot\nUse este canal para executar comandos de música, economia, ou bot do servidor.\n> *Template para editar com os prefixos ou explicações dos bots.*" } },
+    { "action": "send_message", "params": { "channel_id": 1521859736197271646, "content": "## 🎭 Off-Topic\nConversas aleatórias, memes e outros jogos.\n> *Divirtam-se!*" } },
+    { "action": "send_message", "params": { "channel_id": 1521859738340560997, "content": "## 🤝 Procurando Grupo (LFG)\nEstá precisando de ajuda para uma dungeon ou quest? Anuncie aqui!\n> *Template de postagem: [Classe/Nível] procurando grupo para [Nome da Dungeon].*" } },
+    { "action": "send_message", "params": { "channel_id": 1521859739171160196, "content": "## ❓ Dúvidas\nTem alguma pergunta sobre mecânicas do jogo, builds ou drops? Pergunte aqui e a comunidade ajudará.\n> *Template para editar com FAQ no futuro.*" } },
+    { "action": "send_message", "params": { "channel_id": 1521859739884064768, "content": "## 💰 Trade / Comércio\nQuer comprar ou vender itens in-game? Use este canal.\n> *Template de postagem: [WTS/Vendo] ou [WTB/Compro] Item XYZ por Moedas.*" } }
+  ]
+}

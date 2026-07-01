@@ -1,0 +1,57 @@
+[
+  {
+    "timestamp": "2026-07-01T13:13:26.284976Z",
+    "status": "INFO",
+    "details": "Sessão iniciada no servidor: Sticker Beasts"
+  },
+  {
+    "timestamp": "2026-07-01T13:13:26.628410Z",
+    "status": "OK",
+    "details": "Mensagem enviada no canal #👋・boas-vindas"
+  },
+  {
+    "timestamp": "2026-07-01T13:13:27.249383Z",
+    "status": "OK",
+    "details": "Mensagem enviada no canal #📜・regras"
+  },
+  {
+    "timestamp": "2026-07-01T13:13:27.856549Z",
+    "status": "OK",
+    "details": "Mensagem enviada no canal #📢・anúncios"
+  },
+  {
+    "timestamp": "2026-07-01T13:13:32.940543Z",
+    "status": "OK",
+    "details": "Mensagem enviada no canal #🔗・links-úteis"
+  },
+  {
+    "timestamp": "2026-07-01T13:13:33.710244Z",
+    "status": "OK",
+    "details": "Mensagem enviada no canal #💬・chat-geral"
+  },
+  {
+    "timestamp": "2026-07-01T13:13:34.219530Z",
+    "status": "OK",
+    "details": "Mensagem enviada no canal #🤖・comandos-bot"
+  },
+  {
+    "timestamp": "2026-07-01T13:13:39.142984Z",
+    "status": "OK",
+    "details": "Mensagem enviada no canal #🎭・off-topic"
+  },
+  {
+    "timestamp": "2026-07-01T13:13:39.777939Z",
+    "status": "OK",
+    "details": "Mensagem enviada no canal #🤝・procurando-grupo"
+  },
+  {
+    "timestamp": "2026-07-01T13:13:40.377835Z",
+    "status": "OK",
+    "details": "Mensagem enviada no canal #❓・dúvidas"
+  },
+  {
+    "timestamp": "2026-07-01T13:13:45.294311Z",
+    "status": "OK",
+    "details": "Mensagem enviada no canal #💰・trade"
+  }
+]

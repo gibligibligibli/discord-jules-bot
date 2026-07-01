@@ -1,0 +1,137 @@
+[
+  {
+    "timestamp": "2026-07-01T13:10:06.883136Z",
+    "status": "INFO",
+    "details": "Sessão iniciada no servidor: Sticker Beasts"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:07.219196Z",
+    "status": "OK",
+    "details": "Canal #📌 | INFORMAÇÕES editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:07.698079Z",
+    "status": "OK",
+    "details": "Canal #💬 | COMUNIDADE editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:08.464050Z",
+    "status": "OK",
+    "details": "Canal #⚔️ | JOGO editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:13.408767Z",
+    "status": "OK",
+    "details": "Canal #🔊 | CANAIS DE VOZ editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:13.840729Z",
+    "status": "OK",
+    "details": "Canal #🛡️ | ADMINISTRAÇÃO editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:14.473005Z",
+    "status": "OK",
+    "details": "Canal #👋・boas-vindas editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:19.577270Z",
+    "status": "OK",
+    "details": "Canal #📜・regras editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:20.727318Z",
+    "status": "FALHA",
+    "details": "delete_channel: 404 Not Found (error code: 10003): Unknown Channel"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:21.356827Z",
+    "status": "OK",
+    "details": "Canal #📢・anúncios (announcement) criado (ID: 1521865548215091240)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:26.593818Z",
+    "status": "OK",
+    "details": "Canal #🔗・links-úteis editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:27.270448Z",
+    "status": "OK",
+    "details": "Canal #💬・chat-geral editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:27.837212Z",
+    "status": "OK",
+    "details": "Canal #🤖・comandos-bot editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:32.876073Z",
+    "status": "OK",
+    "details": "Canal #🎭・off-topic editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:33.384630Z",
+    "status": "OK",
+    "details": "Canal #🤝・procurando-grupo editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:33.851396Z",
+    "status": "OK",
+    "details": "Canal #❓・dúvidas editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:38.398254Z",
+    "status": "OK",
+    "details": "Canal #💰・trade editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:38.898979Z",
+    "status": "OK",
+    "details": "Canal #Geral 1 🗣️ editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:39.470323Z",
+    "status": "OK",
+    "details": "Canal #Geral 2 🗣️ editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:44.751475Z",
+    "status": "OK",
+    "details": "Canal #Grupo 1 ⚔️ editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:45.264011Z",
+    "status": "OK",
+    "details": "Canal #Grupo 2 ⚔️ editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:45.901871Z",
+    "status": "OK",
+    "details": "Canal #📋・logs-jules editado (name)"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:50.942505Z",
+    "status": "OK",
+    "details": "Permissões de #📌 | INFORMAÇÕES para @everyone atualizadas"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:51.544053Z",
+    "status": "OK",
+    "details": "Permissões de #📌 | INFORMAÇÕES para Administrador atualizadas"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:51.991031Z",
+    "status": "OK",
+    "details": "Permissões de #👋・boas-vindas sincronizadas com a categoria"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:57.071477Z",
+    "status": "OK",
+    "details": "Permissões de #📜・regras sincronizadas com a categoria"
+  },
+  {
+    "timestamp": "2026-07-01T13:10:57.671911Z",
+    "status": "OK",
+    "details": "Permissões de #🔗・links-úteis sincronizadas com a categoria"
+  }
+]

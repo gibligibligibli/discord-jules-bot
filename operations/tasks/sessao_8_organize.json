@@ -1,0 +1,39 @@
+{
+  "session": "sessao-8-organize",
+  "guild_id": 1521821316087287808,
+  "tasks": [
+    { "action": "edit_channel", "params": { "channel_id": 1521861020769976361, "nome": "📌 | INFORMAÇÕES" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521861022304964709, "nome": "💬 | COMUNIDADE" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521861023135436800, "nome": "⚔️ | JOGO" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521861023752261674, "nome": "🔊 | CANAIS DE VOZ" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521861024339198015, "nome": "🛡️ | ADMINISTRAÇÃO" } },
+
+    { "action": "edit_channel", "params": { "channel_id": 1521859730589483129, "nome": "👋・boas-vindas" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859731482742904, "nome": "📜・regras" } },
+    { "action": "delete_channel", "params": { "channel_id": 1521859732187648102 } },
+    { "action": "create_channel", "params": { "nome": "📢・anúncios", "tipo": "announcement", "categoria": "📌 | INFORMAÇÕES" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859732930039868, "nome": "🔗・links-úteis" } },
+
+    { "action": "edit_channel", "params": { "channel_id": 1521859734704099450, "nome": "💬・chat-geral" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859735802876035, "nome": "🤖・comandos-bot" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859736197271646, "nome": "🎭・off-topic" } },
+
+    { "action": "edit_channel", "params": { "channel_id": 1521859738340560997, "nome": "🤝・procurando-grupo" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859739171160196, "nome": "❓・dúvidas" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859739884064768, "nome": "💰・trade" } },
+
+    { "action": "edit_channel", "params": { "channel_id": 1521859741633089686, "nome": "Geral 1 🗣️" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859742304043130, "nome": "Geral 2 🗣️" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859743210147891, "nome": "Grupo 1 ⚔️" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859744040751245, "nome": "Grupo 2 ⚔️" } },
+
+    { "action": "edit_channel", "params": { "channel_id": 1521858816403312771, "nome": "📋・logs-jules" } },
+
+    { "action": "set_channel_permissions", "params": { "channel_id": 1521861020769976361, "target_id": 1521821316087287808, "target_type": "role", "deny": ["send_messages"] } },
+    { "action": "set_channel_permissions", "params": { "channel_id": 1521861020769976361, "target_id": 1521858814511677581, "target_type": "role", "allow": ["send_messages", "manage_messages", "manage_channels"] } },
+
+    { "action": "sync_channel_permissions", "params": { "channel_id": 1521859730589483129 } },
+    { "action": "sync_channel_permissions", "params": { "channel_id": 1521859731482742904 } },
+    { "action": "sync_channel_permissions", "params": { "channel_id": 1521859732930039868 } }
+  ]
+}
