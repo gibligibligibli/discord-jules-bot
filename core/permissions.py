@@ -18,10 +18,15 @@ async def set_channel_permissions(session, channel_id, target_id, target_type,
         return
 
     kwargs = {}
+    valid_perms = dir(discord.Permissions)
     if allow:
-        for p in allow: kwargs[p] = True
+        for p in allow:
+            if p in valid_perms:
+                kwargs[p] = True
     if deny:
-        for p in deny: kwargs[p] = False
+        for p in deny:
+            if p in valid_perms:
+                kwargs[p] = False
 
     overwrite = discord.PermissionOverwrite(**kwargs)
 
@@ -50,8 +55,9 @@ async def get_channel_overwrites(session, channel_id):
 
     overwrites = []
     for target, overwrite in channel.overwrites.items():
-        allow = [p for p, v in overwrite.pair()[0] if v]
-        deny = [p for p, v in overwrite.pair()[1] if v]
+        pair = overwrite.pair()
+        allow = [p for p, v in pair[0] if v]
+        deny = [p for p, v in pair[1] if v]
         overwrites.append({
             "target_id": target.id,
             "target_name": str(target),

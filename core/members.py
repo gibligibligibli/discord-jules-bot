@@ -71,9 +71,17 @@ async def get_messages(session, channel_id, user_id=None, limite=100):
 async def list_members(session, cargo_id=None):
     guild = session.guild
     membros = []
-    for m in guild.members:
-        if cargo_id and not discord.utils.get(m.roles, id=cargo_id):
-            continue
+
+    source_members = guild.members
+    if cargo_id:
+        role = guild.get_role(cargo_id)
+        if role:
+            source_members = role.members
+        else:
+            session.log("ERRO", f"Cargo ID {cargo_id} não encontrado")
+            return []
+
+    for m in source_members:
         top_role = m.top_role.name if m.top_role else "Nenhum"
         membros.append({
             "id": m.id,

@@ -1,7 +1,0 @@
-{
-  "session": "sessao-11-fix-ann",
-  "guild_id": 1521821316087287808,
-  "tasks": [
-    { "action": "send_message", "params": { "channel_id": 1521865548215091240, "content": "## 📢 Anúncios\nFique de olho neste canal para atualizações do jogo, manutenções e novidades!\n> *Template para editar com anúncios futuros.*" } }
-  ]
-}

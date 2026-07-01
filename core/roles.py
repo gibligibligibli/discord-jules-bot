@@ -1,19 +1,19 @@
 import discord
 
+CORES_MAP = {
+    "azul": discord.Color.blue(), "vermelho": discord.Color.red(),
+    "verde": discord.Color.green(), "amarelo": discord.Color.gold(),
+    "roxo": discord.Color.purple(), "laranja": discord.Color.orange(),
+    "preto": discord.Color.default(), "branco": discord.Color.from_rgb(255, 255, 255),
+    "cinza": discord.Color.light_gray(), "rosa": discord.Color.magenta(),
+}
 
 async def create(session, nome, cor=None, exibicao_separada=False, mencao_permitida=False, permissoes=None):
     guild = session.guild
     kwargs = {"name": nome, "reason": "Jules session: criar cargo"}
 
     if cor:
-        cores = {
-            "azul": discord.Color.blue(), "vermelho": discord.Color.red(),
-            "verde": discord.Color.green(), "amarelo": discord.Color.gold(),
-            "roxo": discord.Color.purple(), "laranja": discord.Color.orange(),
-            "preto": discord.Color.default(), "branco": discord.Color.from_rgb(255, 255, 255),
-            "cinza": discord.Color.light_gray(), "rosa": discord.Color.magenta(),
-        }
-        kwargs["color"] = cores.get(cor.lower(), discord.Color.default())
+        kwargs["color"] = CORES_MAP.get(cor.lower(), discord.Color.default())
 
     kwargs["hoist"] = exibicao_separada
     kwargs["mentionable"] = mencao_permitida
@@ -21,7 +21,8 @@ async def create(session, nome, cor=None, exibicao_separada=False, mencao_permit
     if permissoes:
         perms = discord.Permissions()
         for perm, valor in permissoes.items():
-            setattr(perms, perm, valor)
+            if hasattr(perms, perm):
+                setattr(perms, perm, valor)
         kwargs["permissions"] = perms
 
     cargo = await guild.create_role(**kwargs)
@@ -40,14 +41,7 @@ async def edit(session, role_id, nome=None, cor=None, exibicao_separada=None, me
     if nome is not None:
         kwargs["name"] = nome
     if cor is not None:
-        cores = {
-            "azul": discord.Color.blue(), "vermelho": discord.Color.red(),
-            "verde": discord.Color.green(), "amarelo": discord.Color.gold(),
-            "roxo": discord.Color.purple(), "laranja": discord.Color.orange(),
-            "preto": discord.Color.default(), "branco": discord.Color.from_rgb(255, 255, 255),
-            "cinza": discord.Color.light_gray(), "rosa": discord.Color.magenta(),
-        }
-        kwargs["color"] = cores.get(cor.lower(), discord.Color.default())
+        kwargs["color"] = CORES_MAP.get(cor.lower(), discord.Color.default())
     if exibicao_separada is not None:
         kwargs["hoist"] = exibicao_separada
     if mencao_permitida is not None:
@@ -55,7 +49,8 @@ async def edit(session, role_id, nome=None, cor=None, exibicao_separada=None, me
     if permissoes:
         perms = cargo.permissions
         for perm, valor in permissoes.items():
-            setattr(perms, perm, valor)
+            if hasattr(perms, perm):
+                setattr(perms, perm, valor)
         kwargs["permissions"] = perms
 
     if kwargs:
