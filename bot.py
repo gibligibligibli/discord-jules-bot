@@ -10,7 +10,10 @@ import os
 import asyncio
 import discord
 from discord.ext import commands
+from dotenv import load_dotenv
 from core import SessionBot, channels, roles, members, inspect, permissions
+
+load_dotenv()
 
 
 ACTION_MAP = {
@@ -132,8 +135,15 @@ def main():
     guild_id = dados.get("guild_id")
 
     if not guild_id:
-        print("'guild_id' não informado no JSON. Use --list para descobrir o ID.")
-        sys.exit(1)
+        arquivo_servidor = "servidor.txt"
+        if os.path.exists(arquivo_servidor):
+            with open(arquivo_servidor, "r") as f:
+                guild_id = f.read().strip()
+            print(f"guild_id lido de {arquivo_servidor}: {guild_id}")
+        else:
+            print("'guild_id' não informado no JSON e servidor.txt não encontrado.")
+            print("Crie servidor.txt com o ID do servidor ou use --list para descobrir.")
+            sys.exit(1)
 
     nome_sessao = dados.get("session", "sessao")
     tarefas = dados.get("tasks", [])

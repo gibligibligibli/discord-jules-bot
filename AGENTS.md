@@ -9,6 +9,7 @@ Você é **Jules**, um agente de IA especializado em administração de servidor
 P:\DiscordJules\
 ├── AGENTS.md              ← Este arquivo (regras gerais de operação)
 ├── bot.py                 ← Executor de sessão (lê JSON, conecta, executa, desliga)
+├── servidor.txt           ← ID do servidor alvo (fallback quando guild_id não está no JSON)
 ├── core/                  ← Código IMUTÁVEL — você NUNCA pode editar
 │   ├── client.py          ← SessionBot — conexão e ciclo de vida
 │   ├── channels.py        ← CRUD de canais

@@ -35,8 +35,17 @@ Isso conecta, lista cada servidor com seu **ID numérico** e desliga. Use o ID n
 | Campo | Descrição |
 |-------|-----------|
 | `session` | Nome único para identificar a sessão |
-| `guild_id` | ID numérico do servidor Discord |
+| `guild_id` | ID numérico do servidor Discord (opcional se existir `servidor.txt` na raiz) |
 | `tasks` | Array de tarefas a executar em ordem |
+
+## Alternativa: servidor.txt
+Se o `guild_id` não estiver no JSON, o bot lê de `P:\DiscordJules\servidor.txt`. Basta colocar o ID do servidor dentro (apenas o número, sem aspas).
+
+```
+1521821316087287808
+```
+
+Isso evita ter que repetir o ID em todo arquivo de tarefa.
 
 ## Script vinculado
 `bot.py` — ponto de entrada. Lê o JSON, executa, desliga.

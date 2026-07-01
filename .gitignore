@@ -5,3 +5,4 @@ DISCORD_TOKEN
 operations/logs/
 operations/execution/
 levels_data.json
+!servidor.txt
