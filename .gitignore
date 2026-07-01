@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+DISCORD_TOKEN
+operations/logs/
+operations/execution/
+levels_data.json
