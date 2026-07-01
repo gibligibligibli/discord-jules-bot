@@ -1,0 +1,8 @@
+{
+  "session": "sessao-5-final",
+  "guild_id": 1521821316087287808,
+  "tasks": [
+    { "action": "channels_by_category", "params": {} },
+    { "action": "role_hierarchy", "params": {} }
+  ]
+}

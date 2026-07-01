@@ -1,6 +1,5 @@
 import discord
 
-
 async def set_channel_permissions(session, channel_id, target_id, target_type,
                                    allow=None, deny=None):
     guild = session.guild
@@ -18,33 +17,15 @@ async def set_channel_permissions(session, channel_id, target_id, target_type,
         session.log("ERRO", f"{target_type} ID {target_id} não encontrado")
         return
 
-    allow_perms = discord.Permissions()
-    deny_perms = discord.Permissions()
+    kwargs = {}
     if allow:
-        for perm in allow:
-            setattr(allow_perms, perm, True)
+        for p in allow: kwargs[p] = True
     if deny:
-        for perm in deny:
-            setattr(deny_perms, perm, True)
+        for p in deny: kwargs[p] = False
 
-    await channel.set_permissions(target, overwrite=discord.PermissionOverwrite(
-        **{p: None for p in dir(discord.Permissions) if not p.startswith("_")}
-    ), reason="Jules session: limpar permissões primeiro")
+    overwrite = discord.PermissionOverwrite(**kwargs)
 
-    await channel.set_permissions(
-        target,
-        overwrite=discord.PermissionOverwrite(
-            **{p: None for p in ["send_messages", "read_messages", "manage_messages",
-                                  "view_channel", "connect", "speak", "add_reactions",
-                                  "attach_files", "embed_links", "use_external_emoji",
-                                  "use_external_stickers", "mention_everyone",
-                                  "manage_webhooks", "create_instant_invite"]
-               if p not in (allow or []) + (deny or [])},
-            **{p: True for p in (allow or [])},
-            **{p: False for p in (deny or [])},
-        ),
-        reason="Jules session: definir permissões",
-    )
+    await channel.set_permissions(target, overwrite=overwrite, reason="Jules session: definir permissões (PATCHED)")
 
     alvo_nome = target.name if hasattr(target, "name") else str(target)
     session.log("OK", f"Permissões de #{channel.name} para {alvo_nome} atualizadas")

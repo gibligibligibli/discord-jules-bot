@@ -1,0 +1,137 @@
+[
+  {
+    "timestamp": "2026-07-01T12:52:20.872765Z",
+    "status": "INFO",
+    "details": "Sessão iniciada no servidor: Sticker Beasts"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:21.025802Z",
+    "status": "OK",
+    "details": "Canal #informações deletado"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:21.380547Z",
+    "status": "OK",
+    "details": "Canal #comunidade deletado"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:21.544416Z",
+    "status": "OK",
+    "details": "Canal #jogo deletado"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:21.773075Z",
+    "status": "OK",
+    "details": "Canal #canais-de-voz deletado"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:22.246136Z",
+    "status": "OK",
+    "details": "Canal #INFORMAÇÕES (category) criado (ID: 1521861020769976361)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:22.400929Z",
+    "status": "OK",
+    "details": "Canal #COMUNIDADE (category) criado (ID: 1521861022304964709)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:22.615169Z",
+    "status": "OK",
+    "details": "Canal #JOGO (category) criado (ID: 1521861023135436800)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:22.788541Z",
+    "status": "OK",
+    "details": "Canal #CANAIS DE VOZ (category) criado (ID: 1521861023752261674)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:23.162606Z",
+    "status": "OK",
+    "details": "Canal #ADMINISTRAÇÃO (category) criado (ID: 1521861024339198015)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:23.359277Z",
+    "status": "OK",
+    "details": "Canal #boas-vindas editado (category)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:23.565371Z",
+    "status": "OK",
+    "details": "Canal #regras editado (category)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:23.702404Z",
+    "status": "OK",
+    "details": "Canal #anuncios editado (category)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:23.851676Z",
+    "status": "OK",
+    "details": "Canal #links-uteis editado (category)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:24.013221Z",
+    "status": "OK",
+    "details": "Canal #chat-geral editado (category)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:24.197082Z",
+    "status": "OK",
+    "details": "Canal #comandos-bot editado (category)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:24.338070Z",
+    "status": "OK",
+    "details": "Canal #off-topic editado (category)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:24.479343Z",
+    "status": "OK",
+    "details": "Canal #procurando-grupo editado (category)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:24.610169Z",
+    "status": "OK",
+    "details": "Canal #duvidas editado (category)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:24.759751Z",
+    "status": "OK",
+    "details": "Canal #trade editado (category)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:24.893414Z",
+    "status": "OK",
+    "details": "Canal #Geral 1 editado (category)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:25.031251Z",
+    "status": "OK",
+    "details": "Canal #Geral 2 editado (category)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:25.267280Z",
+    "status": "OK",
+    "details": "Canal #Grupo 1 editado (category)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:25.430127Z",
+    "status": "OK",
+    "details": "Canal #Grupo 2 editado (category)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:25.578744Z",
+    "status": "OK",
+    "details": "Canal #logs-jules editado (category)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:25.579083Z",
+    "status": "OK",
+    "details": "Estrutura do servidor obtida (8 categorias)"
+  },
+  {
+    "timestamp": "2026-07-01T12:52:25.579186Z",
+    "status": "OK",
+    "details": "Resultado: {\"Canais de Texto\": {\"category_id\": 1521821316926144572, \"position\": 0, \"channels\": [{\"id\": 1521821316926144574, \"name\": \"geral\", \"type\": \"text\", \"position\": 0}]}, \"Canais de Voz\": {\"category_id\": 1521821316926144573, \"position\": 0, \"channels\": [{\"id\": 1521821316926144575, \"name\": \"Geral\", \"type\": \"voice\", \"position\": 0}]}, \"INFORMAÇÕES\": {\"category_id\": 1521861020769976361, \"position\": 1, \"channels\": [{\"id\": 1521859730589483129, \"name\": \"boas-vindas\", \"type\": \"text\", \"position\": 4}, {\"id\": 1521"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "session": "sessao-10-fix-dups",
+  "guild_id": 1521821316087287808,
+  "tasks": [
+    { "action": "delete_channel", "params": { "channel_id": 1521859732187648102 } },
+    { "action": "edit_channel", "params": { "channel_id": 1521865548215091240, "categoria": "📌 | INFORMAÇÕES" } }
+  ]
+}

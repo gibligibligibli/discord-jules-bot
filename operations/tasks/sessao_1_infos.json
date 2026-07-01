@@ -1,0 +1,9 @@
+{
+  "session": "sessao-1-infos",
+  "guild_id": 1521821316087287808,
+  "tasks": [
+    { "action": "guild_info", "params": {} },
+    { "action": "channels_by_category", "params": {} },
+    { "action": "role_hierarchy", "params": {} }
+  ]
+}

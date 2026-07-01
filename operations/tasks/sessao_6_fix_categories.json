@@ -1,0 +1,38 @@
+{
+  "session": "sessao-6-fix",
+  "guild_id": 1521821316087287808,
+  "tasks": [
+    { "action": "delete_channel", "params": { "channel_id": 1521859729251373179 } },
+    { "action": "delete_channel", "params": { "channel_id": 1521859733575958529 } },
+    { "action": "delete_channel", "params": { "channel_id": 1521859737530929192 } },
+    { "action": "delete_channel", "params": { "channel_id": 1521859740819525632 } },
+
+    { "action": "create_channel", "params": { "nome": "INFORMAÇÕES", "tipo": "category" } },
+    { "action": "create_channel", "params": { "nome": "COMUNIDADE", "tipo": "category" } },
+    { "action": "create_channel", "params": { "nome": "JOGO", "tipo": "category" } },
+    { "action": "create_channel", "params": { "nome": "CANAIS DE VOZ", "tipo": "category" } },
+    { "action": "create_channel", "params": { "nome": "ADMINISTRAÇÃO", "tipo": "category" } },
+
+    { "action": "edit_channel", "params": { "channel_id": 1521859730589483129, "categoria": "INFORMAÇÕES" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859731482742904, "categoria": "INFORMAÇÕES" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859732187648102, "categoria": "INFORMAÇÕES" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859732930039868, "categoria": "INFORMAÇÕES" } },
+
+    { "action": "edit_channel", "params": { "channel_id": 1521859734704099450, "categoria": "COMUNIDADE" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859735802876035, "categoria": "COMUNIDADE" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859736197271646, "categoria": "COMUNIDADE" } },
+
+    { "action": "edit_channel", "params": { "channel_id": 1521859738340560997, "categoria": "JOGO" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859739171160196, "categoria": "JOGO" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859739884064768, "categoria": "JOGO" } },
+
+    { "action": "edit_channel", "params": { "channel_id": 1521859741633089686, "categoria": "CANAIS DE VOZ" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859742304043130, "categoria": "CANAIS DE VOZ" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859743210147891, "categoria": "CANAIS DE VOZ" } },
+    { "action": "edit_channel", "params": { "channel_id": 1521859744040751245, "categoria": "CANAIS DE VOZ" } },
+
+    { "action": "edit_channel", "params": { "channel_id": 1521858816403312771, "categoria": "ADMINISTRAÇÃO" } },
+
+    { "action": "channels_by_category", "params": {} }
+  ]
+}

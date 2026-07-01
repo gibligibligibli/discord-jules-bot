@@ -3,15 +3,18 @@ import discord
 async def create(session, nome, tipo="text", categoria=None, topico=None):
     guild = session.guild
     tipo_map = {"text": discord.ChannelType.text, "voice": discord.ChannelType.voice,
-                 "forum": discord.ChannelType.forum, "announcement": discord.ChannelType.news}
+                 "forum": discord.ChannelType.forum, "announcement": discord.ChannelType.news,
+                 "category": discord.ChannelType.category}
     channel_type = tipo_map.get(tipo, discord.ChannelType.text)
 
     category_obj = None
     if categoria:
         category_obj = discord.utils.get(guild.categories, name=categoria)
 
-    reason = f"Jules session: criar canal #{nome}"
-    if channel_type in (discord.ChannelType.voice,):
+    reason = f"Jules session: criar canal/categoria #{nome}"
+    if channel_type == discord.ChannelType.category:
+        novo = await guild.create_category(nome, reason=reason)
+    elif channel_type in (discord.ChannelType.voice,):
         novo = await guild.create_voice_channel(nome, category=category_obj, reason=reason)
     elif channel_type == discord.ChannelType.forum:
         novo = await guild.create_forum(nome, topic=topico, category=category_obj, reason=reason)
@@ -68,3 +71,23 @@ async def list_channels(session):
         })
     session.log("OK", f"{len(canais)} canais listados")
     return canais
+
+async def send_message(session, channel_id, content):
+    guild = session.guild
+    channel = guild.get_channel(channel_id)
+    if not channel:
+        session.log("ERRO", f"Canal ID {channel_id} não encontrado")
+        return
+
+    # Check for duplicates in recent history
+    try:
+        async for msg in channel.history(limit=20):
+            if msg.author == session.bot.user and msg.content == content:
+                session.log("OK", f"Mensagem ignorada (já existe) no canal #{channel.name}")
+                return
+    except Exception as e:
+        session.log("ERRO", f"Falha ao ler histórico do canal #{channel.name}: {e}")
+        return
+
+    await channel.send(content)
+    session.log("OK", f"Mensagem enviada no canal #{channel.name}")
