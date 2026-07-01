@@ -78,5 +78,16 @@ async def send_message(session, channel_id, content):
     if not channel:
         session.log("ERRO", f"Canal ID {channel_id} não encontrado")
         return
+
+    # Check for duplicates in recent history
+    try:
+        async for msg in channel.history(limit=20):
+            if msg.author == session.bot.user and msg.content == content:
+                session.log("OK", f"Mensagem ignorada (já existe) no canal #{channel.name}")
+                return
+    except Exception as e:
+        session.log("ERRO", f"Falha ao ler histórico do canal #{channel.name}: {e}")
+        return
+
     await channel.send(content)
     session.log("OK", f"Mensagem enviada no canal #{channel.name}")

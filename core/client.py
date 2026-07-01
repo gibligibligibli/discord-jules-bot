@@ -32,23 +32,47 @@ class SessionBot:
                 await self.bot.close()
                 return
 
-            # Find log channel ID
+            # Find log and result channel IDs
             for ch in self.guild.channels:
                 if "logs-jules" in ch.name.lower():
                     self.log_channel_id = ch.id
-                    break
+                if "resultados-jules" in ch.name.lower():
+                    self.results_channel_id = ch.id
 
             await handler(self)
 
-    async def send_log_realtime(self, status, details):
+    async def send_log_realtime(self, status, details, message_ref=None):
         if self.log_channel_id and self.guild:
             ch = self.guild.get_channel(self.log_channel_id)
             if ch:
-                emoji = "✅" if status == "OK" else "❌" if status in ("ERRO", "FALHA") else "ℹ️"
+                if status == "EM ANDAMENTO":
+                    emoji = "ℹ️"
+                elif status == "OK":
+                    emoji = "✅"
+                elif status in ("ERRO", "FALHA"):
+                    emoji = "❌"
+                else:
+                    emoji = "ℹ️"
+
+                content = f"[{emoji} {status}] {details}"
                 try:
-                    await ch.send(f"[{emoji} {status}] {details}")
+                    if message_ref:
+                        await message_ref.edit(content=content)
+                        return message_ref
+                    else:
+                        return await ch.send(content)
                 except Exception as e:
-                    print(f"Erro ao enviar log em tempo real: {e}")
+                    print(f"Erro ao enviar/editar log em tempo real: {e}")
+        return None
+
+    async def send_result_message(self, content):
+        if hasattr(self, 'results_channel_id') and self.results_channel_id and self.guild:
+            ch = self.guild.get_channel(self.results_channel_id)
+            if ch:
+                try:
+                    await ch.send(content)
+                except Exception as e:
+                    print(f"Erro ao enviar resultado final: {e}")
 
     async def run(self, token):
         await self.bot.start(token)

@@ -1,0 +1,9 @@
+{
+  "session": "sessao-13-resultados",
+  "guild_id": 1521821316087287808,
+  "tasks": [
+    { "action": "create_channel", "params": { "nome": "resultados-jules", "tipo": "text", "categoria": "🛡️ | ADMINISTRAÇÃO", "topico": "Resumos de sessões" } },
+    { "action": "set_channel_permissions", "params": { "channel_id": 1521858816403312771, "target_id": 1521821316087287808, "target_type": "role", "deny": ["view_channel"] } },
+    { "action": "set_channel_permissions", "params": { "channel_id": 1521858816403312771, "target_id": 1521858814511677581, "target_type": "role", "allow": ["view_channel"] } }
+  ]
+}

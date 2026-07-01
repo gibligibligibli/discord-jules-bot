@@ -54,3 +54,14 @@ Lista todos os canais do servidor (sem parâmetros).
 { "action": "list_channels", "params": {} }
 { "action": "delete_channel", "params": { "channel_id": 123456789 } }
 ```
+
+### `send_message`
+Envia uma mensagem de texto em um canal, evitando duplicação verificando o histórico recente.
+
+| Parâmetro | Tipo | Obrigatório | Descrição |
+|-----------|------|-------------|-----------|
+| `channel_id` | int | sim | ID do canal |
+| `content` | string | sim | O conteúdo da mensagem |
+
+## Notas sobre Tipos
+O tipo `category` foi suportado! Para criar categorias no servidor e melhor organizar o ambiente, passe `"tipo": "category"` ao utilizar `create_channel`. O tipo `announcement` agora funciona em sua totalidade se o servidor possuir os recursos de Comunidade habilitados.
